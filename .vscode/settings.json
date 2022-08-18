@@ -1,0 +1,8 @@
+{
+    "editor.minimap.autohide": true,
+    "editor.minimap.enabled": true,
+    "editor.mouseWheelZoom": true,
+    "window.zoomLevel": 1.3,
+    "editor.fontSize": 16,
+    "editor.fontFamily": "'Anonymous Pro', Consolas"
+}
