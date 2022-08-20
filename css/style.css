@@ -7,6 +7,7 @@
 
 body {
     font-size: 15px;
+    height: 100%;
 }
 
 ul {
@@ -88,6 +89,10 @@ a {
 
 }
 
+.menu__list-item {
+    cursor: pointer;
+}
+
 .menu__list-item:not(:last-child) {
     margin-right: 40px;
 
@@ -109,25 +114,35 @@ a {
 .header__submenu-burger:nth-child(2) {
     margin-left: -10px;
 }
+.header-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
 
 .header__title {
+    text-align: center;
+    position: relative;
+    
+}
+
+.header__title-text {
     font-size: 150px;
     line-height: 125%;
 
-
     color: #DB3138;
-    padding-top: 168px;
-    
+    margin-top: 110px;   
 
 }
 
 .decoration-block {
     width: 146px;
     height: 14px;
-    position: relative;
-    left: 14px;
-    bottom: -425px;
-    display: inline-block;
+    position: absolute;
+    left: 37%;
+    bottom: -6px;
 }
 
 
@@ -181,8 +196,7 @@ a {
     font-size: 40px;
     line-height: 120%;
     width: 437px;
-    padding-top: 61px;
-    margin: 0 auto;
+    padding-top: 41px;
     text-align: center;
     color: #FFFFFF;
 }
@@ -198,7 +212,8 @@ a {
 
     color: #FFFFFF;
     position: relative;
-    padding-top: 60px;
+    padding-top: 55px;
+    padding-bottom: 115px;
     position: relative;
     z-index: 1;
 }
@@ -209,31 +224,39 @@ a {
     height: 61px;
     background: #DB3138;
     position: absolute;
-    left: 44.3%;
+    left: 31.3%;
     top: 44px;
     z-index: -1;
-}
-
-.header-bottom {
 }
 
 .header__info-items {
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
+
+    height: 213px;
 
 }
 
 .header__info-item {
-    border: 1px solid #fff;
-    height: 213px;
+    padding-top: 43px;
+    border: 1px solid #898989;
     flex-wrap: nowrap;
+    flex-basis: 33.333%;
+    height: 213px;
+
 }
 
 
 
+.info-item_none-border {
+    border-left: none;
+    border-right: none;
+}
+
+
 
 .info-item_text {
+
     font-size: 24px;
     line-height: 140%;
 
@@ -242,13 +265,17 @@ a {
 
     color: #DB3138;
 
+    text-align: center;
+
 }
+
 
 .info-item_title {
     text-transform: uppercase;
     color: #fff;
     font-size: 18px;
     line-height: 140%;
+    text-align: center;
 
     letter-spacing: 0.05em;
 }
