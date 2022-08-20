@@ -114,7 +114,6 @@ a {
     font-size: 150px;
     line-height: 125%;
 
-    text-align: center;
 
     color: #DB3138;
     padding-top: 168px;
@@ -196,12 +195,12 @@ a {
     text-align: center;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    text-transform: uppercase;
 
     color: #FFFFFF;
     position: relative;
     padding-top: 60px;
-    z-index: 0;
+    position: relative;
+    z-index: 1;
 }
 
 .header__btn-services::after {
@@ -210,9 +209,46 @@ a {
     height: 61px;
     background: #DB3138;
     position: absolute;
-    left: 0;
-    top: 0;
-    left: 685px;
-    top: 45px;
+    left: 44.3%;
+    top: 44px;
     z-index: -1;
+}
+
+.header-bottom {
+}
+
+.header__info-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+
+.header__info-item {
+    border: 1px solid #fff;
+    height: 213px;
+    flex-wrap: nowrap;
+}
+
+
+
+
+.info-item_text {
+    font-size: 24px;
+    line-height: 140%;
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #DB3138;
+
+}
+
+.info-item_title {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    line-height: 140%;
+
+    letter-spacing: 0.05em;
 }
